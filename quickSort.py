@@ -4,8 +4,7 @@ def quicksort(inputArr):
     array = copy.deepcopy(inputArr)         # creates a copy of the array so the original is not modified
     low = 0
     high = len(array) - 1
-    swapCount = 0
-    swapCount += quickSortInternal(array, low, high)
+    swapCount = quickSortInternal(array, low, high)
     return array, swapCount
 
 def quickSortInternal(array, low, high):
