@@ -9,7 +9,7 @@ def quicksort(inputArr):
 
 def quickSortInternal(array, low, high):
     # calculates the middle index and sets the pivot equal to the value at that index
-    pivot = array[int(low + (high-low)/2)]
+    pivot = array[low + (high-low) // 2]
     swapCount = 0
 
     i = low
